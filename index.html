@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="text.css">
+    <meta name="description" content="Area trapezoid calculator">
+    <meta name="keywords" content="Text, Website">
+    <meta name="author" content="M.Sanii">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Calculator for Trapezoid Area</title>
   </head>
   <body>
-
-  <label for = "base1">Base A:</label>
-  <input type = "text" id = "base1" name = "base1"><br><br>
-  <label for = "base2">Base B:</label>
-  <input type = "text" id = "base2" name = "base2"><br><br>
-  <label for = "height">Height:</label>
-  <input type = "text" id = "height" name = "height"><br><br>
-
-<button onclick = "Click()">Calculate</button>
-
-<div id = "divresult"></div>
+  <label for="base1">Base A:</label>
+  <input type="text" id="base1" name="base1"><br><br>
+  <label for="base2">Base B:</label>
+  <input type="text" id="base2" name="base2"><br><br>
+  <label for="height">Height:</label>
+  <input type="text" id="height" name="height"><br><br>
+<button onclick="Click()">Calculate</button>
+<div id="divresult"></div>
 </body>
-<script>
-
-function Click(){
-  let b1 = document.getElementById("base1");
-  let b2 = document.getElementById("base2");
-  let ht = document.getElementById("height");
-  let base1Value;
-  base1Value = Math.abs(b1.value);
-  let base2Value;
-  base2Value = Math.abs(b2.value);
-  let heightValue;
-  heightValue = Math.abs(ht.value);
-  let result;
-  result = ((base1Value + base2Value) / 2) * heightValue;
-  let divresult = document.getElementById("divresult");
-  divresult.innerHTML = result;
-}
-
+<script src="Click.js">
 </script>
-  
 </html>
